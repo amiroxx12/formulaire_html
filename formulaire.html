@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2> Formulaire </h2>
     <form action="#" method="post">
-        <label for="Nom Complet">Nom Complet</label><br><br>
-        <input type="text" id="nom" name="nom" required><br><br>
+        <h2>Formulaire</h2>
 
-        <label for="Email">Email</label><br><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <label for="nom">Nom Complet</label>
+        <input type="text" id="nom" name="nom" required>
 
-        <label for="Nom Complet">Matière Preférée</label><br><br>
-        <select id="matiere" name="matiere" required><br><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="matiere">Matière Préférée</label>
+        <select id="matiere" name="matiere" required>
             <option value="">-- Sélectionnez une matière --</option>
             <option value="Algorithm">Advanced Algorithmics</option>
             <option value="Network">Advanced Networking</option>
@@ -23,23 +25,25 @@
             <option value="Project">Project Management</option>
             <option value="System">System Administration</option>
             <option value="Software">Software Engineering</option>
-        </select><br><br>
+        </select>
 
-        <label for="tel">Numéro de téléphone</label><br><br>
-        <input type="tel" id="tel" name="tel" placeholder="0666-123456"><br><br>
+        <label for="tel">Numéro de téléphone</label>
+        <input type="tel" id="tel" name="tel" placeholder="0666-123456">
 
-        <label for="naissance">Date de naissance</label><br><br>
-        <input type="date" id="naissance" name="naissance" required><br><br>
+        <label for="naissance">Date de naissance</label>
+        <input type="date" id="naissance" name="naissance" required>
 
-        <label>Genre:</label><br>
-        <input type="radio" id="homme" name="homme" required>
-        <label for="homme">Homme</label>
-        <input type="radio" id="femme" name="femme" required>
-        <label for="femme">Femme</label><br><br>
+        <label>Genre</label>
+        <div class="radio-group">
+            <input type="radio" id="homme" name="genre" value="Homme" required>
+             <label for="homme">Homme</label>
+            <input type="radio" id="femme" name="genre" value="Femme">
+            <label for="femme">Femme</label>
+        </div>
 
-        <label for="ville">Ville :</label><br>
+        <label for="ville">Ville</label>
         <select id="ville" name="ville">
-            <option value="">-- Sélectionnez votre ville -- </option>
+            <option value="">-- Sélectionnez votre ville --</option>
             <option value="Fes">Fes</option>
             <option value="Meknes">Meknes</option>
             <option value="Rabat">Rabat</option>
@@ -50,16 +54,13 @@
             <option value="Tetouane">Tetouane</option>
             <option value="Errachidia">Errachidia</option>
             <option value="Tinghir">Tinghir</option>
-            
-        </select><br><br>
-        <label for="commentaire">Injecte ton commentaire !</label><br><br>
-        <textarea id="commentaire" name="commentaire" rows="4" cols="50" placeholder="Injecte ton commentaire ici"></textarea><br><br>
+        </select>
+
+        <label for="commentaire">Commentaire</label>
+        <textarea id="commentaire" name="commentaire" rows="4" placeholder="Injecte ton commentaire ici"></textarea>
 
         <input type="reset" value="Effacer tout">
         <input type="submit" value="Envoyer">
-        
-
-
     </form>
 </body>
 </html>
